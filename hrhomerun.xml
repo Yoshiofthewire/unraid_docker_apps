@@ -22,7 +22,7 @@ Host networking for full HDHomeRun device discovery (UDP broadcast)</Overview>
   <Category>MediaApp:Video MediaServer:Video Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://play-lh.googleusercontent.com/P55MBwWNUuShnUN0lz1qqI-NMVVtXy7DKpzOgyQ3DHxeLS-jm2OWu56v4YJ2rl02EsAfo9vpJAa4kY-XwkNEv4M=w480-h960-rw</Icon>
+  <Icon>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/bcbb7f671a42ef9f64972f344b27c2f80f717799/unnamed.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
