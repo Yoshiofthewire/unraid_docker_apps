@@ -2,15 +2,15 @@
 <Container version="2">
   <Name>HDHomeRunDVR</Name>
   <Repository>yoshiofthewire/hdhomerundvr</Repository>
-  <Registry/>
+  <Registry>https://github.com/yoshiofthewire/docker-hdhomerundvr/pkgs/container/docker-hdhomerundvr</Registry>
   <Network>host</Network>
   <MyIP/>
   <MyMAC/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
-  <ReadMe/>
+  <Support>https://forums.unraid.net/topic/199378-support-hdhomerun-dvr-20250815/</Support>
+  <Project>https://github.com/Yoshiofthewire/docker-hdhomerundvr</Project>
+  <ReadMe>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/88c1bf04e855c4daa4a96434be25292c47d35382/README.md</ReadMe>
   <Overview>Docker container for the HDHomeRun DVR Server by SiliconDust.&#13;
 &#13;
 Features&#13;
@@ -22,11 +22,11 @@ Host networking for full HDHomeRun device discovery (UDP broadcast)</Overview>
   <Category>MediaApp:Video MediaServer:Video Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/bcbb7f671a42ef9f64972f344b27c2f80f717799/unnamed.png</Icon>
+  <Icon>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/a733d9dc7ebf725818e17ccbc945015b573ae465/unnamed.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1781121287</DateInstalled>
+  <DateInstalled>1781273930</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>A working HDHomeRun network tuner with up-to-date firmware (see below)</Requires>
