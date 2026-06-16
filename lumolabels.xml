@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>LumoLabels</Name>
-  <Repository>yoshiofthewire/lumo-labels</Repository>
-  <Registry>https://hub.docker.com/repository/docker/yoshiofthewire/lumo-labels/general</Registry>
+  <Repository>ghcr.io/yoshiofthewire/lumo-labels</Repository>
+  <Registry>https://github.com/yoshiofthewire/lumo-labels/pkgs/container/lumo-labels</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <MyMAC/>
