@@ -12,13 +12,13 @@
   <Project>https://github.com/Yoshiofthewire/docker-hdhomerundvr</Project>
   <ReadMe>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/88c1bf04e855c4daa4a96434be25292c47d35382/README.md</ReadMe>
   <Overview>Docker container for the HDHomeRun DVR Server by SiliconDust.&#13;
-    &#13;
-    Features&#13;
-    Runs the HDHomeRun DVR recording engine inside a Docker container&#13;
-    supervisord keeps the process alive &#x2014; auto-restarts if the DVR daemon crashes&#13;
-    Container-level restart: unless-stopped policy recovers from container failures&#13;
-    Timezone configurable via the TZ environment variable&#13;
-    Host networking for full HDHomeRun device discovery (UDP broadcast)</Overview>
+&#13;
+Features&#13;
+Runs the HDHomeRun DVR recording engine inside a Docker container&#13;
+supervisord keeps the process alive &#x2014; auto-restarts if the DVR daemon crashes&#13;
+Container-level restart: unless-stopped policy recovers from container failures&#13;
+Timezone configurable via the TZ environment variable&#13;
+Host networking for full HDHomeRun device discovery (UDP broadcast)</Overview>
   <Category>MediaApp:Video MediaServer:Video Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
@@ -26,7 +26,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1782151192</DateInstalled>
+  <DateInstalled>1782258007</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>A working HDHomeRun network tuner with up-to-date firmware (see below)</Requires>
