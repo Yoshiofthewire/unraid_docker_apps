@@ -30,7 +30,7 @@ Host networking for full HDHomeRun device discovery (UDP broadcast)</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires>A working HDHomeRun network tuner with up-to-date firmware (see below)</Requires>
-  <Config Name="Host Path 1" Target="/hdhomerun" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/HDHomeRun/</Config>
-  <Config Name="65001" Target="65001" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">65001</Config>
+  <Config Name="Recordings Folder" Target="/hdhomerun" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/HDHomeRun/</Config>
+  <Config Name="65001" Target="65001" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">65001</Config>
   <TailscaleStateDir/>
 </Container>
