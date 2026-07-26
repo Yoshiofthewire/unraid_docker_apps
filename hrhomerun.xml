@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>HDHomeRunDVR</Name>
-  <Repository>ghcr.io/yoshiofthewire/docker-hdhomerundvr</Repository>
+  <Repository>ghcr.io/yoshiofthewire/docker-hdhomerundvr:latest</Repository>
   <Registry>https://github.com/yoshiofthewire/docker-hdhomerundvr/pkgs/container/docker-hdhomerundvr</Registry>
   <Network>host</Network>
   <MyIP/>
@@ -10,27 +10,25 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/199378-support-hdhomerun-dvr-20250815/</Support>
   <Project>https://github.com/Yoshiofthewire/docker-hdhomerundvr</Project>
-  <ReadMe>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/88c1bf04e855c4daa4a96434be25292c47d35382/README.md</ReadMe>
+  <ReadMe>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/master/README.md</ReadMe>
   <Overview>Docker container for the HDHomeRun DVR Server by SiliconDust.&#13;
 &#13;
 Features&#13;
 Runs the HDHomeRun DVR recording engine inside a Docker container&#13;
 supervisord keeps the process alive &#x2014; auto-restarts if the DVR daemon crashes&#13;
-Container-level restart: unless-stopped policy recovers from container failures&#13;
+Enable Autostart in Unraid so the container comes back after an array start or reboot&#13;
 Timezone configurable via the TZ environment variable&#13;
 Host networking for full HDHomeRun device discovery (UDP broadcast)</Overview>
   <Category>MediaApp:Video MediaServer:Video Status:Stable</Category>
   <WebUI/>
-  <TemplateURL/>
-  <Icon>https://github.com/Yoshiofthewire/docker-hdhomerundvr/blob/a733d9dc7ebf725818e17ccbc945015b573ae465/unnamed.png?raw=true</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Yoshiofthewire/unraid_docker_apps/main/hrhomerun.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Yoshiofthewire/docker-hdhomerundvr/master/unnamed.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1782258007</DateInstalled>
+  <DateInstalled/>
   <DonateText/>
   <DonateLink/>
   <Requires>A working HDHomeRun network tuner with up-to-date firmware (see below)</Requires>
-  <Config Name="Recordings Folder" Target="/hdhomerun" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/HDHomeRun/</Config>
-  <Config Name="65001" Target="65001" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">65001</Config>
-  <TailscaleStateDir/>
+  <Config Name="Recordings Folder" Target="/hdhomerun" Default="/mnt/user/Media/HDHomeRun/" Mode="rw" Description="Where the DVR engine writes recordings. Must be a share the container can write to." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/HDHomeRun/</Config>
 </Container>
