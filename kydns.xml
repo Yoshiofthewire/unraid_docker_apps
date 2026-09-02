@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>KyDNS</Name>
-  <Repository>ghcr.io/yoshiofthewire/kydns-server:latest</Repository>
-  <Registry>https://github.com/Yoshiofthewire/kydns-server/pkgs/container/kydns-server</Registry>
+  <Repository>ghcr.io/Busness-app/kydns-server:latest</Repository>
+  <Registry>https://github.com/Busness-app/kydns-server/pkgs/container/kydns-server</Registry>
   <Network>br0</Network>
   <MyIP></MyIP>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/Yoshiofthewire/kydns-server/issues</Support>
-  <Project>https://github.com/Yoshiofthewire/kydns-server</Project>
+  <Support>https://github.com/Busness-app/kydns-server/issues</Support>
+  <Project>https://github.com/Busness-app/kydns-server</Project>
   <Overview>KyDNS is a self-hosted local DNS server and service directory for homes, homelabs, and small teams. Register a service once and it answers on your private domain (home.arpa by default) with address records, aliases, and derived reverse (PTR) records — no hosts files, no opaque rewrite rules. It also does per-subnet views, dnsmasq DHCP lease discovery, service health checks, opt-out blackhole filtering, and upstream forwarding over DNS-over-TLS or DNS-over-HTTPS with a cache and failover. Queries are default-closed: anything outside the allowed networks gets REFUSED, so an accidentally exposed KyDNS is not an open resolver.&#13;&#10;&#13;&#10;IMPORTANT — this template uses a custom br0 network so the container gets its own LAN address and owns port 53 there, without fighting Unraid's host DNS or an existing AdGuard Home / Pi-hole. Set "Fixed IP address" below to an address inside your LAN subnet and OUTSIDE your router's DHCP pool. Do not leave it blank: Docker then picks the first free address in the subnet for you — usually x.x.x.2 — which will collide with a device you already have or sit inside the DHCP pool, and KyDNS answers nowhere.&#13;&#10;&#13;&#10;No config file needed to start: the image ships a working one. Set the fixed IP, apply, and it serves. Mapping your own kydns.yaml is optional and lives under Advanced, for settings this template does not expose (upstream resolvers, private domain, reverse zones).&#13;&#10;&#13;&#10;AFTER FIRST START: read the setup token from the log (or from setup-token in the data directory) and finish setup at the WebUI. KyDNS speaks plain HTTP — put a TLS-terminating reverse proxy in front if you expose it.&#13;&#10;&#13;&#10;Note: macvlan/ipvlan networks deliberately block traffic between the Unraid host and its own containers. Everything else on the LAN reaches KyDNS fine; only the host itself cannot.</Overview>
   <Category>Network:DNS Network:Other Tools:</Category>
   <WebUI>http://[IP]:[PORT:8053]/</WebUI>
