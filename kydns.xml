@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>KyDNS</Name>
   <Repository>ghcr.io/Busnes-app/kydns-server:latest</Repository>
-  <Registry>https://github.com/Busness-app/kydns-server/pkgs/container/kydns-server</Registry>
+  <Registry>https://github.com/Busnes-app/kydns-server/pkgs/container/kydns-server</Registry>
   <Network>br0</Network>
   <MyIP></MyIP>
   <Shell>sh</Shell>
